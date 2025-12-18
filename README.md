@@ -3,7 +3,7 @@
 Flood susceptibility mapping (FSM) using **12 GeoTIFF conditioning factors**
 and a **point inventory** (flood/non-flood) 
 
-## Data you need
+## Input Data 
 
 
 ```
