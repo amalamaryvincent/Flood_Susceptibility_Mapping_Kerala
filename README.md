@@ -1,11 +1,10 @@
 # Flood Susceptibility Mapping
 
-Notebook-compatible replication scaffold for flood susceptibility mapping (FSM) using **12 GeoTIFF conditioning factors**
-and a **point inventory** (flood/non-flood) — aligned to the input conventions used in `raster_workbook.ipynb`.
+Flood susceptibility mapping (FSM) using **12 GeoTIFF conditioning factors**
+and a **point inventory** (flood/non-flood) 
 
 ## Data you need
 
-Put your files here (names can differ if you update `configs/notebook_compatible.yaml`):
 
 ```
 data/raw/rasters/
@@ -68,10 +67,3 @@ python scripts/build_notebook_dataset.py   --config configs/notebook_compatible.
 python scripts/train_simple_3dcnn.py   --data data/processed/notebook_patches_3d.npz   --epochs 10 --batch 16 --lr 1e-3
 ```
 
-## Git init
-
-```bash
-git init
-git add .
-git commit -m "Initial notebook-compatible FSM replication scaffold"
-```
