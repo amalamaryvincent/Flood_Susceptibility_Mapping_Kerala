@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+data/processed/*
+!data/processed/.gitkeep
+*.npz
+*.pt
+*.pkl
+.DS_Store

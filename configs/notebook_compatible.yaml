@@ -1,0 +1,40 @@
+# Matches the raster_workbook.ipynb expectations:
+# - 12 conditioning-factor GeoTIFFs
+# - inventory points with fields X, Y, Flood (or geometry used to derive X/Y)
+seed: 42
+check_alignment: true
+test_size: 0.2
+
+inventory:
+  path: data/raw/inventory/fandn.shp
+  label_field: Flood
+  x_field: X
+  y_field: Y
+
+rasters:
+  root: data/raw/rasters
+  nodata: null
+  # Order matters: keep it consistent with your notebook factors list
+  factors:
+    - Elevation.tif
+    - Aspect.tif
+    - Curvature.tif
+    - dtr.tif
+    - ndvi.tif
+    - rainfall.tif
+    - Slope.tif
+    - spi_extract.tif
+    - TWI.tif
+    - Geology.tif
+    - lulc.tif
+    - Soil.tif
+
+patches:
+  # The notebook slices +/-113/114 pixels -> 227x227 patches
+  patch_size: 227
+  bands: 12
+  pad_value: 0.0
+  skip_out_of_bounds: true
+
+# Optional: limit number of points (notebook used 8000 in one loop)
+# max_points: 8000
