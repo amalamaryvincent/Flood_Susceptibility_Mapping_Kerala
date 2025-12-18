@@ -1,0 +1,5 @@
+data/raw/rasters/*.tif
+data/raw/rasters/*.tiff
+data/processed/
+__pycache__/
+.venv/
