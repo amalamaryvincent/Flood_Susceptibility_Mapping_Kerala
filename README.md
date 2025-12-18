@@ -1,4 +1,4 @@
-# fsm-tif-cnn-replication
+# Flood Susceptibility Mapping
 
 Notebook-compatible replication scaffold for flood susceptibility mapping (FSM) using **12 GeoTIFF conditioning factors**
 and a **point inventory** (flood/non-flood) — aligned to the input conventions used in `raster_workbook.ipynb`.
